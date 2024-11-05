@@ -1,0 +1,6 @@
+Instructions to run code:
+1.install django 
+2.download folder/zip file
+3.go into the folder in terminal
+4.run command 'python manage.py runserver'
+5.Open '127.0.0.1:8000' on your computer to view the project 

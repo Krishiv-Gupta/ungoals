@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UN Sustainable Development Goals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .jumbotron {
+    background-color: #058947;
+    color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>{{o.Name}}</h1>
+  <p>{{o.Text}}</p> 
+  
+</div>
+  
+<div class="container">
+    <center><img class="responsive" src="{{o.Photo}}" width="700" height="500"></center>
+    <br>
+    <button class="btn btn-info btn-block btn-lg" onclick="myalert()">Support</button><br>
+  <a href="{% url 'home' %}"><input class="btn btn-info btn-block btn-lg" type="button" value="Go Back" /></a>
+</div>
+<script>
+    function myalert() {
+        alert("Thank You for Supporting");
+    }
+</script>
+</body>
+</html>
